@@ -1,0 +1,15 @@
+<!DOCTYPE html>  //    tells we are using HTML5
+<html lang="en"> // controls / decides websites language
+    <meta charset="UTF-8"> // bytes (spports characters, emojis , etc.)
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> // metadata of the body (data)
+--->>>>
+        name = "viewport" --> browser m kha website dikhegi
+        content = "width=device-width" --> website koresponsive banane m help karta hai
+        initial-scale = 1.0  --> website ki initial scale set karta hai taaki hum jis bhi device m usko open karein to proper pages dikhne chahiye ye nhi ki bohot chhota dikh rha hai aur ye bhi nhi ki sreen se bahar jaa rha hai
+
+-------------------------------------------------------------------------------------
+tags and elements
+
+<> -> angle brackets
+
+<tag> content </tag> 
