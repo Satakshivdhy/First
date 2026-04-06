@@ -1,0 +1,189 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: sans-serif;
+  /* font-size: large; */
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color:  #4A6FDC;
+  display: flex;
+}
+
+#mainDiv {
+  height: 90vh;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items:flex-end; 
+  justify-content: space-evenly;
+}
+#login {
+  height: 75%;
+  width: 35%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#register {
+  height: 90%;
+  width: 39%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+  
+  
+
+
+.cards{
+  height: 16.6%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: large;
+  gap: 18px;  
+  text-decoration: none;
+ 
+ 
+}
+
+
+#login_title{
+  font-size: larger;
+  font-weight: 300;
+  /* display: flex; */
+  flex-direction: column;
+  align-items:start;
+  gap:0;
+}
+
+#password{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.ri-mail-line{
+  height: 20px;
+  width: 20px;
+}
+
+#line{
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  margin-top: 10%;
+}
+#loginButton{
+  height: 15%;
+  width: 100%;
+  background-color: #4A6FDC;
+  color: white;
+  border-radius: 5px;
+  border-color: #4A6FDC;
+  font-size: large;
+
+}
+#signup{
+  display: flex;
+  justify-content: center;
+  
+}
+
+a{
+  color: #4A6FDC;
+  text-decoration: none;
+}
+#email,#pass{
+  border-bottom: 2px solid grey;
+}
+#pass{
+  display: flex;
+  justify-content: space-between;
+}
+i{
+  font-size: 27px;
+  color: grey;
+}
+.blue_line{
+  
+  text-decoration: underline;
+  text-decoration-color: #4A6FDC;
+  
+  
+  
+}
+
+
+.cards2{
+  height: 12.87%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: large;
+  gap: 15px;  
+  text-decoration: none;
+}
+  /* input{                                /* yay!🍻😁,i can write a div item inside it in nested form 😁😁*
+  border: none;
+  outline: none;
+  font-size: large;
+*/
+
+
+#registerButton{
+  height: 12%;
+  width: 100%;
+  background-color: #4A6FDC;
+  color: white;
+  border-radius: 5px;
+  border-color: #4A6FDC;
+  font-size: large;
+
+}
+
+ #loginButton:hover{
+  background-color: white;
+  color: blue;
+}
+ #loginButton:active{
+  box-shadow: 5px 5px 5px 0 blue;
+ }
+
+ input{
+  border: none;
+  outline: none;
+
+  
+  
+  
+  font-size: large;
+}
+
+input:focus{
+  outline: #4A6FDC;
+  accent-color: green;
+ }
+
+#registerButton:hover{
+  background-color: white;
+  color: blue;
+}

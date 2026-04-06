@@ -1,0 +1,59 @@
+/* The Canvas */
+body{
+    background-color:  #f0f0f0;
+}
+.stage {
+    height: 100vh;
+    /* display: grid; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* place-items: center; */
+}
+/* Part 2: Applying the Animation */
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: #ff4757;
+    border-radius: 50% ;
+
+    /* Animation Properties */
+    animation-name: bounce;           /* Matches the @keyframes name */
+    animation-duration: 3s;           /* Takes 2 seconds to finish */
+    animation-timing-function: ease;  /* Smooth start and end */
+    animation-iteration-count: infinite; /* Keeps going forever */
+    animation-direction: alternate;  /* Plays forward then backward*/
+}
+/* Part 1: Defining the Animation Steps */
+@keyframes bounce {
+    0% {
+        transform: translate(0,0);
+        background-color: #ff4757;
+    }
+    25% {
+        transform: translate(200px,200px);
+
+        background-color: #2ed573; 
+    }
+    50% {
+        transform: translate(0,400px); 
+        background-color: #1e90ff;
+    }
+    75% {
+        transform: translate(-200px,200px); 
+        background-color: #2ed573;
+    }
+    100% {
+        transform: translate(0,0); 
+        background-color: #ff4757;
+    }
+} 
+
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+}
+.box:hover{
+    
+}

@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: auto;
+  width: auto;
+}
+
+#mainDiv {
+  height: auto;
+  width: auto;
+}
+
+header {
+  height: 88px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 50px;
+  position: sticky;
+  top: 0%;
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
+}
+
+#downhead {
+  height: 39px;
+  width: 100%;
+  background-color: white;
+}
+.logo {
+  height: 45px;
+  width: 150px;
+  cursor: pointer;
+}
+.navlinks {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.navlinks a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+}
+#navContact {
+  width: 340px;
+  height: 60px;
+  display: flex;
+  margin-left: 135px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+  }
+}
+.ri-phone-fill {
+  font-weight: 1000;
+  font-size: 22px;
+}
+#studentLoginbtn {
+  height: 50px;
+  width: 150px;
+  background-color: #125785;
+  color: white;
+  font-size: large;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 5px 5px 0 0 #79b6de;
+  transition: all 0.2s ease;
+}
+#studentLoginbtn:hover {
+  box-shadow: 2px 2px 0 0 #79b6de;
+  transform: translate(3px, 3px);
+  cursor: pointer;
+}
+
+main {
+  height: auto;
+  width: auto;
+}
+
+form {
+  height: 142vh;
+  width: 64vw;
+  background-color: #eaf8fe;
+  margin: auto;
+  padding: 3%;
+  display: grid;
+  grid-template-rows: 50px 80px 120px 120px 120px 120px 300px;
+  border-radius: 20px;
+  color: #505d6f;
+  font-size: 17px;
+  flex-wrap: wrap;
+}
+
+form h1,
+form p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form p {
+  font-size: 1rem;
+}
+.name {
+  display: flex;
+  width: 58vw;
+  gap: 3%;
+}
+
+.name div {
+  border: none;
+  height: 60px;
+  width: 50%;
+}
+.name input,
+#year select {
+  height: 60px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #d1dfe7;
+  padding-left: 15px;
+}
+
+#collegeName {
+  width: 100%;
+}
+
+#email {
+  width: 70%;
+}
+#email input {
+  width: 100%;
+}
+
+#year {
+  height: 60px;
+  width: 50%;
+}
+
+.data2 {
+  margin-top: 6%;
+  display: flex;
+}
+
+#course {
+  width: 29vw;
+  height: fit-content;
+  row-gap: 2px;
+  font-size: 16px;
+}
+.course-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* checkbox size */
+.course-item input {
+  width: 18px;
+  height: 18px;
+}
+#sourceOfInformation {
+  width: 29vw;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  line-height: 1.6;
+  height: fit-content;
+}
+
+#sourceOfInformation select {
+  height: 60px;
+  width: 100%;
+  border-radius: 10px;
+  padding-left: 5%;
+}
+#executiveName {
+  select {
+    background-color: #e9ecef;
+  }
+}
+
+#submitBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+#submitBtn {
+  height: 60px;
+  width: 130px;
+  top: 10%;
+  border-radius: 50px;
+  background-color: #081a28;
+  color: white;
+  transition: transform 0.4s ease;
+}
+
+#submitBtn:hover {
+  transform: translateY(-4px);
+}
+
+#aboveFooter {
+  height: 140px;
+  width: 100%;
+  background-color: white;
+}
+
+footer {
+  background-color: #125785;
+  a {
+    text-decoration: none;
+    color: #b8cddb;
+  }
+}
+
+#innerFooter {
+  height: auto;
+  width: 86%;
+  padding-top: 7%;
+  margin-left: 7%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  line-height: 2;
+}
+#innerFootera {
+  width: 100%;
+  display: flex;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  i {
+    cursor: pointer;
+  }
+}
+#card1 {
+  height: auto;
+  width: 21%;
+  justify-content: center;
+  line-height: 1.5;
+  color: #b8cddb;
+}
+
+.linksContainer {
+  display: flex;
+  height: auto;
+  width: 35%;
+  justify-content: space-around;
+  margin-left: 10%;
+}
+#card2 {
+  justify-content: center;
+  width: 40%;
+}
+/* #card2 a {
+  line-height: 2;
+} */
+
+#card3 {
+  justify-content: center;
+  width: 40%;
+}
+#card4 {
+  height: auto;
+  width: 30%;
+  justify-content: center;
+}
+#card4 p {
+  color: #b8cddb;
+  line-height: 35px;
+}
+
+#map {
+  display: flex;
+  gap: 5px;
+}
+
+#iconContainer {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+}
+
+.icons {
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.icons:hover {
+  background-color: rgb(157, 245, 157);
+}
+#footerBottom {
+  color: #b8cddb;
+}
+#footerBottomContent {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#collegeName {
+  width: 100%;
+}
+
+/* Responsive code */
+
+@media screen and (max-width: 1197px) {
+  .navlinks,
+  #phone {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  form {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+  }
+  .name {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+  }
+  .name div {
+    width: 100%;
+    height: 100%;
+  }
+  #email,
+  #year {
+    width: 100%;
+  }
+
+  .data2 {
+    display: flex;
+    flex-direction: column;
+  }
+  #course,
+  #sourceOfInformation {
+    width: 100%;
+    /* font-weight: 500; */
+  }
+  #submitBtnContainer {
+    height: 14vh;
+    justify-content: center;
+    align-items: end;
+  }
+  /* footer {
+    letter-spacing: 1;
+  } */
+   footer{
+     padding-left: 9%;
+    padding-right: 6%;
+   }
+  #innerFootera {
+    display: flex;
+    flex-direction: column;
+  }
+  #card1,
+  #card4,
+  .linksContainer {
+    width: 100%;
+  }
+  #card4{
+    margin-top: 8%;
+  }
+  #card4 i{
+    font-size: 1.5rem;
+  }
+  .linksContainer {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin: 0;
+    padding-right: 6%;
+    margin-top: 8%;
+  }
+  #iconContainer{
+    width: 35%;
+  }
+}

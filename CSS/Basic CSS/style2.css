@@ -1,0 +1,52 @@
+/* Variable in Css */
+
+/* selector{
+    property : value;
+} */
+
+:root{                          /* this is the Global variable*/
+    --main-color :rgb(95, 103, 249);
+    --sub-color:  rgb(19, 231, 143);
+    --text-color: rgba(241, 30, 76, 0.916);
+}
+
+
+body{
+    background-color: black;
+    
+}
+
+#login{
+    height:40px;
+    width: 70px;
+    /* background-color: rgb(249, 95, 121); */
+    background-color: var(--main-color);
+    border-radius: 5px;
+
+
+}
+#register{
+    height:40px;
+    width: 70px;
+    background-color: var(--sub-color);
+    border-radius: 5px;
+}
+h1{
+    color: var(--main-color);
+}
+
+h3{
+    color: var(--sub-color);
+}
+
+p{
+    color: var(--text-color);
+}
+
+th{
+     color:var(--main-color);
+}
+
+td{
+    color: var(--text-color);
+}

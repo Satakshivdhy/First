@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <div>
+      <form>
+        <label for="firstName"> First name:*</label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstname"
+          placeholder="Enter First Name"
+        />
+        <br /><br />
+        <label for="lastName"> Last name:*</label>
+        <input
+          type="text"
+          id="lastName"
+          name="firstname"
+          placeholder="Enter Last Name"
+        />
+        <br /><br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Eter Email Address"
+        />
+        <br /><br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" />
+        <br /><br />
+        <label for="gender">Gender:</label><br />
+        <input type="radio" id="male" name="gender" checked /> Male <br />
+        <input type="radio" id="female" name="gender" /> Female <br />
+        <input type="radio" id="other" name="gender" /> Other <br />
+        <br /><br />
+        <label for="age">Age:</label>
+        <input type="number" id="age" />
+        <br /><br />
+        <label for="preferences">Preferences: </label><br />
+        <input type="checkbox" /> Acrylic Painting <br />
+        <input type="checkbox" /> Water Color Painting <br />
+        <input type="checkbox" /> Oil Painting <br />
+        <br />
+        <div>
+          <p>Select Occupation:</p>
+          <select name="occupation" id="occupation">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="doctor">Doctor</option>
+            <option value="engineer">Engineer</option>
+          </select>
+        </div>
+        <br />
+
+        <textarea
+          name="feedback"
+          rows="6"
+          cols="30"
+          placeholder="Share few lines about yourself..."
+        ></textarea>
+        <br /><br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+</body>
+</html>
