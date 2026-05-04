@@ -1,0 +1,12 @@
+// let test = "";
+// Global Variable
+// Local Variable
+// Block Variable
+
+
+
+abc();
+
+function abc(){
+    console.log("Hello Dosto, Bahut pareshani hai yrr, js kitna confusing hai"); 
+}
