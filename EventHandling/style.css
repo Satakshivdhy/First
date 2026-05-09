@@ -1,0 +1,51 @@
+#bulb1{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#bulbOn, #bulbOff, #bulbRed, #bulbGreen, #bulbBlue {
+    background-color: beige;
+    border-radius: 10px;
+}
+
+#bulbOn:active{
+    background-color: yellow;
+}
+#bulbOff:active{
+    background-color: white;
+}
+#bulbRed:active{
+    background-color: red;
+}
+#bulbGreen:active{
+    background-color: green;
+}
+#bulbBlue:active{
+    background-color: blue;
+}
+#parentBox{
+    display: flex;
+    gap: 10px;
+}
+
+.box{
+    width: 50px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+#redbox{
+    background-color: red;
+}
+#greenbox{
+    background-color: green;
+}
+#bluebox{
+    background-color: blue;
+}

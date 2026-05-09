@@ -1,0 +1,23 @@
+.boxContainer{
+    width: 60%;
+    /* height: 300px; */
+    border: 1px solid black;
+    display: flex;
+    margin: 10%;
+}
+
+#leftBox{
+    width: 60%;
+    /* height: 100%; */
+    border-right: 1px solid black;
+    padding: 20px;
+
+
+}
+#rightBox{
+    width: 60%;
+    /* height: 100%; */
+    border-left: 1px solid black;
+    padding: 20px;
+
+}
