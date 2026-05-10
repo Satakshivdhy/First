@@ -54,3 +54,10 @@ arr.forEach((element) => {
     
 });
 
+
+let users = [];
+
+users.push({ id: 1, name: "Raj" });
+users.push({ id: 2, name: "Amit" });
+
+console.log(users);
