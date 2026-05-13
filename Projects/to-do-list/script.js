@@ -35,7 +35,7 @@ LI.appendChild(DIV);
 
 document.getElementById("taskList").appendChild(LI);
 
-BUTTON.onclick=() => LI.remove(); // initiating delete button // delete button ko commad de ra hai
+BUTTON.onclick=() => LI.remove(); // initiating delete button // delete button ko commad de ra hai ki is button m click karte hi list delete ho jaaye
 
 document.getElementById("taskDiv").classList.remove("d-none");
  document.getElementById("newTask").value = "";
