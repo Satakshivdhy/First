@@ -34,8 +34,9 @@
                 id="fullName"
                 placeholder="Enter your Full name"
                 class="form-control"
+                required
               />
-              <span class="text-danger small" id="fullNameError"></span>
+              <span class="text-danger small manualError" id="fullNameError"></span>
             </div>
             <div class="p-2 mt-2">
               <label for="email" class="form-label fw-bold"
@@ -47,8 +48,9 @@
                 id="email"
                 placeholder="Enter your email address"
                 class="form-control"
+                required
               />
-              <span class="text-danger small" id="emailError"></span>
+              <span class="text-danger small manualError" id="emailError"></span>
             </div>
             <div class="p-2 mt-2">
               <label for="mobNumber" class="form-label fw-bold"
@@ -57,11 +59,12 @@
               <input
                 type="number"
                 name="number"
-                id="number"
+                id="mobNumber"
                 placeholder="Enter your mobile number"
                 class="form-control"
+                required
               />
-              <span class="text-danger small" id="phoneError"></span>
+              <span class="text-danger small manualError" id="phoneError"></span>
             </div>
             <div class="p-2 mt-2">
               <label for="DOB" class="form-label fw-bold">Date Of Birth:</label>
@@ -71,8 +74,9 @@
                 id="DOB"
                 placeholder="Enter your Birth Date"
                 class="form-control"
+                required
               />
-              <span class="text-danger small" id="dobError"></span>
+              <span class="text-danger small manualError" id="dobError"></span>
             </div>
             <div class="p-2 mt-2 d-flex gap-5">
               <label for="gender" class="form-label fw-bold"
@@ -85,6 +89,7 @@
                   id="Female"
                   value="Female"
                   class="form-switch"
+  
                 />
                 <span> Female</span>
               </div>
@@ -95,6 +100,7 @@
                   id="Male"
                   vlaue="Male"
                   class="form-switch"
+                 
                 /><span> Male</span>
               </div>
               <div>
@@ -107,7 +113,7 @@
                 />
                 <span>Others</span>
               </div>
-              <span class="text-danger small" id="dobError"></span> 
+              <span class="text-danger small manualError" id="dobError"></span> 
             </div>
           </section>
 
@@ -127,11 +133,11 @@
                 <option value="graduate">Graduate</option>
                 <option value="postgraduate">Postgraduate</option>
               </select>
-              <span class="text-danger small" id="qualificationError"></span>
+              <span class="text-danger small manualError" id="qualificationError"></span>
             </div>
             <div class="p-2 mt-2">
               <label for="grade" class="form-label fw-bold">Percentage/Grade in Last Qualification:</label>
-              <input type="text" name="grade" id="grade" class="form-control"  placeholder="90% or A-F"/>
+              <input type="text" name="grade" id="grade" class="form-control"  placeholder="90% or A-F" required/>
               <span class="text-danger small" id="marksError"></span>
             </div>
           </section>
@@ -147,7 +153,7 @@
                 <option value="ca/cs">CA/CS</option>
                 <option value="UPSC">UPSC</option>
               </select>
-               <span class="text-danger small" id="courseError"></span>
+               <span class="text-danger small manualError" id="courseError"></span>
             </div>
             <div class="p-2 mt-2 d-flex gap-5 align-items-center">
               <label for="batchtiming" class="form-label fw-bold">Select batch Timings</label>
@@ -181,7 +187,7 @@
                 />
                 <span>Weekend</span>
               </div>
-              <span class="text-danger small" id="timingsError"></span>
+              <span class="text-danger small manualError" id="timingsError"></span>
             </div>
           </section>
           <section class="bg-white p-3 rounded border mb-3">
@@ -192,8 +198,9 @@
                 name="residentialAddress"
                 placeholder="Enter your full Address"
                 class="form-control"
+                required
               ></textarea>
-              <span class="text-danger small" id="addressError"></span>
+              <span class="text-danger small manualError" id="addressError"></span>
             </div>
             <div class="p-2 mt-2">
               <label for="city" class="form-label fw-bold">City:</label>
@@ -203,8 +210,9 @@
                 id="city"
                 placeholder="Enter your city name"
                 class="form-control"
+                required
               />
-               <span class="text-danger small" id="cityError"></span>
+               <span class="text-danger small manualError" id="cityError"></span>
             </div>
             <div  class="p-2 mt-2">
               <label for="pinCode" class="form-label fw-bold">Pin Code:</label>
@@ -214,8 +222,9 @@
                 id="pinCode"
                 placeholder="Enter Pin Code"
                 class="form-control"
+                required
               />
-                <span class="text-danger small" id="pinError"></span>
+                <span class="text-danger small manualError" id="pinError"></span>
             </div>
           </section>
 
@@ -228,8 +237,9 @@
                 id="GuardianFullName"
                 placeholder="Enter your Father's Name"
                 class="form-control"
+                required
               />
-              <span class="text-danger small" id="guardianNameError"></span>
+              <span class="text-danger small manualError" id="guardianNameError"></span>
             </div>
             <div class="p-2 mt-2">
               <label for="GuardianContact" class="form-label fw-bold">Guardian's Contact Number:</label>
@@ -239,8 +249,9 @@
                 id="GuardianContact"
                 placeholder="Enter your Father's mobile Number"
                 class="form-control"
+                required
               />
-              <span class="text-danger small" id="guardiancontactError"></span>
+              <span class="text-danger small manualError" id="guardiancontactError"></span>
             </div>
           </section>
           
