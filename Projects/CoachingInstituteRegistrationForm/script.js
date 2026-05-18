@@ -88,10 +88,20 @@ function validateData(data) {
     isValid = false;
   }
 
-//   if(/^([A-F]|[0-9]{1,3}(\.[0-9]+)?%)$/.test(data.Grade)){
-//     document.getElementById("marksError").innerText= "invalid input";
-//     isValid = false;
-//   }
+  if(/!^([A-F]|[0-9]{1,3})$/.test(data.Grade)){
+    document.getElementById("marksError").innerText= "invalid input";
+    isValid = false;
+  }
+
+  if(!data.Address){
+    document.getElementById("addressError").innerText = "Full Address Required";
+    isValid = false;
+  }
+  else if (!/^[A-Za-z0-9\s\.\,\-\/]{10,100}$/.test(data.Address)) {
+    document.getElementById("addressError").innerText =
+      "Please fill you full Address";
+    isValid = false;
+  }
 
   if(!data.City){
     document.getElementById("cityError").innerText = "City Name Required";
