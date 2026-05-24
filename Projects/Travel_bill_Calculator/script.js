@@ -3,5 +3,7 @@ document.querySelector("form" , (event)=>{
 
     const InputDistance = document.getElementById("inputDistance").value;
     console.log(InputDistance);
+
+    
     
 })
