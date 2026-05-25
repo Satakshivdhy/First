@@ -1,3 +1,20 @@
-body{
-    background-blend-mode: saturation;
+body {
+  background-blend-mode: saturation;
+  background: #090979;
+  background: radial-gradient(
+    circle,
+    rgba(9, 9, 121, 1) 7%,
+    rgba(9, 9, 121, 1) 20%,
+    rgba(7, 45, 145, 1) 42%,
+    rgba(6, 78, 167, 1) 62%,
+    rgba(3, 149, 213, 1) 76%,
+    rgba(0, 212, 255, 1) 93%
+  );
 }
+#weatherContainer{
+    height: auto;
+    width: 600px;
+    background-color:floralwhite;
+    
+}
+

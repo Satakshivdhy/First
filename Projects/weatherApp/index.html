@@ -16,20 +16,20 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header >
+  <body class="bg-secondary">
+    <div id="weatherContainer" class="d-flex flex-column gap-4   p-5 m-auto mt-5 border rounded-4 shadow">
+      <header>
         <h3 class="b">Hey! Check The Weather Here⛅</h3>
-    </header>
-    <div>
-    <input type="text" id="cityName" />
-    <button onclick="getWeather()">Get Weather</button>
-    </div>
-    <br />
+      </header>
+      <div class="d-flex gap-3 ">
+        <input type="text" id="cityName" class="form-control" placeholder="Enter the city"/>
+        <button onclick="getWeather()" class="btn btn-secondary w-50">Get Weather</button>
+      </div>
 
-    <div>
-      <label>Temp : <span id="Temperature">30</span>ºC</label>
+      <div class="text-center fw-bold">
+        <label>Temp : <span id="Temperature">30</span>ºC</label>
+      </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
