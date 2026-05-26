@@ -1,20 +1,59 @@
 body {
-  background-blend-mode: saturation;
-  background: #090979;
-  background: radial-gradient(
-    circle,
-    rgba(9, 9, 121, 1) 7%,
-    rgba(9, 9, 121, 1) 20%,
-    rgba(7, 45, 145, 1) 42%,
-    rgba(6, 78, 167, 1) 62%,
-    rgba(3, 149, 213, 1) 76%,
-    rgba(0, 212, 255, 1) 93%
-  );
+  background-image: url("https://npr.brightspotcdn.com/dims4/default/bb830f0/2147483647/strip/true/crop/5472x3648+0+0/resize/880x587!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd0%2F78%2F9fef17d24780952ccd8f3963291c%2Fbilly-huynh-v9bnfmcykbg-unsplash.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+
 }
 #weatherContainer{
     height: auto;
-    width: 600px;
+    width: 800px;
     background-color:floralwhite;
     
 }
 
+#cloudLogo{
+  height: 100px;
+ width: 100px;
+}
+
+.cards{
+  height: 150px;
+  width: 200px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  margin-left: 10px;
+  
+  /* padding-left: 10px; */
+}
+
+header{
+    width: 100%;
+    /* padding: 20px 40px; */
+    
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    /* border-bottom: 1px solid rgba(255,255,255,0.2); */
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+
+    /* border-radius: 0 0 30px 30px; */
+}
+#cloudLogo{
+    animation: floatCloud 4s ease-in-out infinite;
+}
+
+@keyframes floatCloud{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-6px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
