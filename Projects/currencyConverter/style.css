@@ -3,6 +3,9 @@
     height: fit-content;
 }
 #container:hover{
-    box-shadow: 0px 0px 25px 25px  rgba(0, 123, 255, 0.4);
-    transform: translate(s);
+    /* box-shadow: 0px 0px 25px 25px  rgba(0, 123, 255, 0.4); */
+    transform: scale(1.1)
 }
+/* #container{
+    width: 40%;
+} */
