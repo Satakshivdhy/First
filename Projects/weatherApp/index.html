@@ -19,7 +19,7 @@
   </head>
   <body class="bg-secondary position-relative" >
 
-    <header class="d-flex rounded-bottom-5 align-items-center justify-content-center gap-4">
+    <header class="d-flex  align-items-center rounded-bottom-5 ">
       <div id="cloudLogo">
         <img
           src="./ccloudLogo.jpg"
@@ -27,7 +27,7 @@
           class="object-fit-contain h-100 w-100 rounded-bottom-5"
         />
       </div>
-      <div><h1 class="text-center">Hey! Check The Weather Here⛅</h1></div>
+      <div><h1 class="b">Hey! Check The Weather Here⛅</h1></div>
       <!-- <button class="btn btn-primary"><i class="bi bi-arrow-left"></i> Back</button> -->
     </header>
     <main>
@@ -45,14 +45,48 @@
           placeholder="Enter the city"
         />
         <button onclick="getWeather()" class="btn btn-secondary w-50">
-          Get Weather
+          <i class="bi bi-search"></i>
         </button>
       </div>
 
-      
+      <div class="text-center fw-bold row d-flex gap-4">
+        <div class="col-xl-4 cards d-flex">
+          <div class="w-50 h-50 rounded-circle bg-danger-subtle d-flex justify-content-center align-items-center">
+            <i class="bi bi-thermometer-sun fs-2"></i>
+          </div>
+        <label>Temp : <span id="Temperature">__</span>ºC</label>
+          </div>
+        <div class="col-xl-4 cards" >
+          <label>FeelsLike : <span id="feelsLike">__</span>ºC</label>
+        </div>
+        <div class="col-xl-4 cards">
+          <label >Atmospheric Pressure : <span id="pressure">__</span>hPa</label>
+        </div>
+        <div class="col-xl-4 cards">
+          <label>Humidity : <span id="humidity">__</span>%</label>
+        </div>
+        <div class="col-xl-4 cards">
+          <label>Minimum Temperature : <span id="minTemp">__</span>ºC</label>
+        </div>
+        <div class="col-xl-4 cards">
+          <label>Maximum Temperature : <span id="maxTemp">__</span>ºC</label>
+        </div>
+        <div class="col-xl-4 cards">
+          <label>Sealevel : <span id="seaLevel">__</span>hPa</label>
+        </div>
+        <div class="col-xl-4 cards">
+          <label>Ground Level : <span id="groundLevel">__</span>hPa</label>
+        </div>
+        <div class="col-xl-4 cards">
+          <label>Clouds : <span id="clouds">__</span></label>
+        </div>
+        <!-- <div>
+           <label>Country Codee : <span id="countryCode">__</span>ºC</label>
+        </div> -->
+      </div>
     </div>
     </main>
     
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
   </body>
 </html>

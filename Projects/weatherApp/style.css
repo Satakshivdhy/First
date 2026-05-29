@@ -8,7 +8,7 @@ body {
 }
 #weatherContainer{
     height: auto;
-    width: 800px;
+    width: 500px;
     background-color:floralwhite;
     
 }
@@ -28,8 +28,8 @@ body {
   /* padding-left: 10px; */
 }
 
-header{
-    width: 100%;
+header,#weatherContainer{
+    /* width: 100%; */
     /* padding: 20px 40px; */
     
     background: rgba(255,255,255,0.18);
