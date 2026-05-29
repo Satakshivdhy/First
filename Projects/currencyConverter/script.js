@@ -1,9 +1,7 @@
-function LoadSelectOption() {
-  const Country1 = document.getElementById("country1");
-  const Country2 = document.getElementById("country2");
-  //   console.log(Country1);
-  //   console.log(Country2);
+let Country1 = document.getElementById("country1"); //from country
+let Country2 = document.getElementById("country2"); //to country
 
+function LoadSelectOption() {
   ListOfCountries.forEach((country) => {
     const opt = document.createElement("option");
     opt.value = country.countryCode + "_" + country.currencyCode;
@@ -20,9 +18,16 @@ function LoadSelectOption() {
 }
 
 LoadSelectOption();
-//For Flags
+
+
+// Default selected countries
+Country1.value = "US_USD";
+Country2.value = "IN_INR";
+FetchFlag1();
+FetchFlag2();
+// For Flags
 async function FetchFlag1() {
-  const code = document.getElementById("country1").value;
+  const code = Country1.value;
   console.log(code);
 
   const countryCode = code.split("_")[0];
@@ -30,16 +35,10 @@ async function FetchFlag1() {
 
   document.getElementById("flag1").src =
     `https://flagsapi.com/${countryCode}/flat/64.png`;
-
-  const response = await fetch(
-    `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currencyCode.toLowerCase()}.json`,
-  );
-  const data = await response.json();
-  console.log(data);
 }
 
 async function FetchFlag2() {
-  const code = document.getElementById("country2").value;
+  const code = Country2.value;
   console.log(code);
 
   const countryCode = code.split("_")[0];
@@ -47,38 +46,48 @@ async function FetchFlag2() {
 
   document.getElementById("flag2").src =
     `https://flagsapi.com/${countryCode}/flat/64.png`;
-
-  
 }
 
 async function convertCurrency(event) {
-    event.preventDefault();
+  event.preventDefault();
+  const amount = document.getElementById("inputAmount").value; // user entered amount
 
-  const amount =
-    document.getElementById("inputAmount").value;
+  const fromCurrency = Country1.value.split("_")[1];
 
-  const fromCurrency =
-    document.getElementById("country1").value;
-
-  const toCurrency =
-    document.getElementById("country2").value;
+  const toCurrency = Country2.value.split("_")[1];
 
   const response = await fetch(
-    `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${fromCurrency.toLowerCase()}.json`
+    `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${fromCurrency.toLowerCase()}.json`,
   );
 
   const data = await response.json();
-
   console.log(data);
 
-  const exchangeRate =
-    data[fromCurrency.toLowerCase()][toCurrency.toLowerCase()];
+  if (amount.length !== 0) {
+    const exchangeRate =
+      data[fromCurrency.toLowerCase()][toCurrency.toLowerCase()];
 
-  const convertedAmount =
-    exchangeRate * amount;
+    const convertedAmount = amount * exchangeRate;
 
-  console.log(convertedAmount);
+    document.getElementById("newAmount").innerText =
+      `${amount} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`;
+  } else {
+    alert("please enter a valid anount");
+  }
+}
 
-  document.getElementById("newAmount").innerText =
-    `${convertedAmount.toFixed(2)} ${toCurrency}`;
+document
+  .querySelector("#convertBtn")
+  .addEventListener("click", convertCurrency);
+
+
+document.querySelector("#swapBtn").addEventListener("click" , swapingData)
+
+function swapingData(){
+  const temp = Country1.value;
+  Country1.value = Country2.value;
+  Country2.value = temp;
+  FetchFlag1();
+  FetchFlag2();
+
 }

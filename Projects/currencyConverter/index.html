@@ -29,37 +29,32 @@
           <div class="d-flex justify-content-around align-items-center">
             <div class="h-25 w-25 d-flex flex-column gap-3">
               <img
-                src="https://flagsapi.com/US/flat/64.png"
+                src=""
                 alt=""
                 class="object-fit-contain h-100 w-100"
                 id="flag1"
               />
               <select
                 name="from"
-                class="form-control text-center"
+                class=""
                 id="country1"
                 onchange="FetchFlag1()"
               >
-                <option value="">USA</option>
+                <option value=""></option>
               </select>
             </div>
-            <button class="btn btn-secondary" id="swapBtn">
+            <button class="btn btn-secondary" type="button" id="swapBtn">
               <i class="bi bi-arrow-left-right"></i>
             </button>
             <div class="h-25 w-25 d-flex flex-column gap-3">
               <img
-                src="https://flagsapi.com/IN/flat/64.png"
+                src=""
                 alt=""
                 class="object-fit-contain h-100 w-100"
                 id="flag2"
               />
-              <select
-                name="to"
-                class="form-control text-center"
-                id="country2"
-                onchange="FetchFlag2()"
-              >
-                <option value="#">India</option>
+              <select name="to" class="" id="country2" onchange="FetchFlag2()">
+                <option value=""></option>
               </select>
             </div>
           </div>
@@ -70,12 +65,7 @@
               class="form-control w-25 shadow-none text-black"
               id="inputAmount"
             />
-            <button
-            
-              class="btn btn-primary w-25"
-              id="convertBtn"
-              onclick="convertCurrency()"
-            >
+            <button class="btn btn-primary w-25" id="convertBtn">
               Convert
             </button>
             <div class="border rounded-2 text-center pt-3 w-25 bg-light">
